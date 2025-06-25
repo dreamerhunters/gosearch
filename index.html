@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <div style="display: none;">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJHMPF11RL"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BJHMPF11RL');
+        </script>
+    </div>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpunk Bookmarks</title>
+    <meta name="description" content="Cyberpunk style personal navigation website with bookmarks and search functionality">
+    <meta name="keywords" content="navigation, bookmarks, cyberpunk, personal website">
+    <meta name="author" content="Gosearchhunters">
+    <meta name="theme-color" content="#00ff9d">
+    
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <title>Cyberpunk Bookmarks - Gosearchhunters</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Icon Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     <!-- Cyberpunk Font -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading Cyberpunk Interface...</p>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <h1 class="site-title">Gosearchhunters</h1>
         <div class="search-container">
             <input type="text" id="searchInput" class="search-input" placeholder="Search bookmarks...">
+            <button id="addBookmarkBtn" class="add-bookmark" title="Add New Bookmark">
+                <i class="ri-add-line"></i>
+            </button>
         </div>
     </header>
 
@@ -253,11 +288,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Add Bookmark Button -->
-    <button class="add-bookmark" id="addBookmarkBtn">
-        <i class="ri-add-line"></i>
-    </button>
 
     <!-- Footer -->
     <footer class="footer">
